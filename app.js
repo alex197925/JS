@@ -92,8 +92,8 @@
 
 // 7.
 // Find max number
-// let numbers = [5, 2, 9, 8, 7, 3];
-//
+// let numbers = [5, 2, 9, 8, 7, 3, 13];
+// //
 // function findMax(numbers) {
 //      let maxNum = numbers[0];
 //      for (let i = 1; i < numbers.length; i++) {
@@ -104,4 +104,42 @@
 //      return maxNum;
 // }
 //
-// console.log(findMax(numbers));
+// console.log(findMax(numbers)); // 13
+
+// 8.
+// let numbers = [5, 8, 2, 9, 3, 10];
+//
+// function sortBestRatingsFirst(numbers) {
+//     // Find max
+//     for (let j = 0; j < numbers.length -1; j++) {
+//
+//         let max_num = numbers[j];
+//         let max_location = j;
+//
+//         for (let i = j; i < numbers.length; i++) {
+//             if (numbers[i] > max_num) {
+//                 // Know max num And it's index(location)
+//                 max_num = numbers[i];
+//                 max_location = i;
+//             }
+//         }
+//         //  swap the first and the last
+//         numbers[max_location] = numbers[j];  // --> 10
+//         numbers[j] = max_num;
+//     }
+//     return  numbers;
+// }
+//
+// console.log(sortBestRatingsFirst(numbers));
+
+//-----------------------------------------------------------------
+// numbers.sort(sortBestRatingsFirst = (a, b) => {return b - a});
+// console.log(numbers)
+
+
+
+
+
+
+
+
